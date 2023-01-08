@@ -1,8 +1,11 @@
 {
-  "name": "markdown-to-resume",
-  "private": true,
-  "version": "0.0.1",
+  "name": "create-markdown-to-resume-1",
+  "version": "0.0.8",
   "type": "module",
+  "main": "bin/index.js",
+  "bin": {
+    "create-markdown-to-resume-1": "bin/index.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -23,5 +26,6 @@
   },
   "dependencies": {
     "reset.css": "^2.0.2"
-  }
+  },
+  "license": "ISC"
 }
