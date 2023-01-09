@@ -1,20 +1,24 @@
 {
-  "name": "create-markdown-to-resume-1",
-  "version": "0.0.8",
+  "name": "create-markdown-to-resume",
+  "version": "1.0.0-beta.1",
   "type": "module",
-  "main": "bin/index.js",
+  "main": "cli/index.js",
   "bin": {
-    "create-markdown-to-resume-1": "bin/index.js"
+    "create-markdown-to-resume": "bin/index.js"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:cli": "unbuild cli/src",
+    "test-create": "create-markdown-to-resume"
   },
   "devDependencies": {
     "@rollup/pluginutils": "^5.0.2",
+    "colors": "^1.4.0",
     "fs-extra": "^11.1.0",
     "html-minifier-terser": "^7.1.0",
+    "inquirer": "^9.1.4",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-container": "^3.0.0",
@@ -22,6 +26,7 @@
     "puppeteer": "^19.4.1",
     "rollup-pluginutils": "^2.8.2",
     "sass": "^1.57.1",
+    "unbuild": "^1.0.2",
     "vite": "^4.0.4"
   },
   "dependencies": {
